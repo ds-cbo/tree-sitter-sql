@@ -5345,10 +5345,6 @@
         ]
       }
     },
-    "comment_text": {
-      "type": "SYMBOL",
-      "name": "_literal_string"
-    },
     "comment_statement": {
       "type": "SEQ",
       "members": [
@@ -5376,8 +5372,13 @@
               "name": "keyword_null"
             },
             {
-              "type": "SYMBOL",
-              "name": "comment_text"
+              "type": "ALIAS",
+              "content": {
+                "type": "SYMBOL",
+                "name": "_literal_string"
+              },
+              "named": true,
+              "value": "literal"
             }
           ]
         }
@@ -5398,8 +5399,13 @@
               "name": "keyword_column"
             },
             {
-              "type": "SYMBOL",
-              "name": "object_reference"
+              "type": "ALIAS",
+              "content": {
+                "type": "SYMBOL",
+                "name": "_qualified_field"
+              },
+              "named": true,
+              "value": "object_reference"
             }
           ]
         },
@@ -5455,7 +5461,7 @@
             },
             {
               "type": "SYMBOL",
-              "name": "object_reference"
+              "name": "identifier"
             }
           ]
         },
@@ -5468,7 +5474,7 @@
             },
             {
               "type": "SYMBOL",
-              "name": "object_reference"
+              "name": "identifier"
             }
           ]
         },
@@ -5507,7 +5513,7 @@
             },
             {
               "type": "SYMBOL",
-              "name": "object_reference"
+              "name": "identifier"
             }
           ]
         },
@@ -5517,6 +5523,10 @@
             {
               "type": "SYMBOL",
               "name": "keyword_trigger"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "identifier"
             },
             {
               "type": "SYMBOL",

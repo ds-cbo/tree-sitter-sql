@@ -3373,10 +3373,6 @@
           "named": true
         },
         {
-          "type": "comment_text",
-          "named": true
-        },
-        {
           "type": "identifier",
           "named": true
         },
@@ -3445,16 +3441,15 @@
           "named": true
         },
         {
+          "type": "literal",
+          "named": true
+        },
+        {
           "type": "object_reference",
           "named": true
         }
       ]
     }
-  },
-  {
-    "type": "comment_text",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "constraint",
@@ -7451,6 +7446,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "object_reference",
+          "named": true
+        }
+      ]
     }
   },
   {
